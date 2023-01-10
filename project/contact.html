@@ -1,0 +1,86 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Contact Us | Starbucks Coffee Company</title>
+    <link rel="shortcut icon" href="logo.ico" type="image/x-icon">
+    <link rel="stylesheet" href="StyleSheet5.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <section>
+        <div class="circle"></div>
+        <header>
+            <a href="index.html"><img src="logo.png" class="logo"></a>
+            <ul>
+                <li><a href="index.html"><b>HOME</b></a></li>
+                <li><a href="shop.html"><b>SHOP</b></a></li>
+                <li><a href="delivery.html"><b>DELIVERY</b></a></li>
+                <li><a href="app.html"><b>APP</b></a></li>
+                <li><a href="contact.html"><b>CONTACT</b></a></li>
+            </ul>
+            <div class="menu">
+                <i class='bx bx-menu'></i>
+            </div>
+            <div class="buttons">
+                <button>
+                    <i class='bx bx-search bx-tada' style='color:#008148'></i>
+                </button>
+                <button>
+                    <i class='bx bx-shopping-bag bx-tada' style='color:#008148'></i>
+                </button>
+            </div>
+            <div class="search-form">
+                <input type="text" class="search-input" id="search-box" placeholder="Search Here" />
+                <i class='bx bx-search' style='color:#008148'></i>
+            </div>
+        </header>
+
+        <div class="content">
+            <div class="textBox">
+                <h2>Contact Us<br /></h2>
+                <h3>Chat</h3>
+                <p1><i>
+    Chat is currently unavailable for US and Canada
+    Hours: 4AM - 10PM PT, 7 days a week.
+</i></p1><br />
+                <h3>Email</h3>
+                <p2><i>Please use the links on this page to email a specific department.</i></p2><br />
+                <h3>Phone</h3>
+                <p3><i>
+    800-Starbucks (800-782-7282)
+    Hours: 5AM – 8PM PT, 7 days a week.
+</i>
+                   
+                </p3><br /><br /><br />
+                <p><i>! If you didn't find your answer in our FAQs, please feel free to contact one of the departments listed below. Simply click on the appropriate link and send us your questions, concerns and/or feedback.</i></p>
+                <a href="#">Go FAQs Page</a>
+            </div>
+            <div class="imgBox">
+                <img src="newphoto.png" class="starbucks">
+            </div>
+
+            <ul class="social">
+                <li><a href="https://www.facebook.com/Starbucks/"><img src="logofacebook.png"></a></li>
+                <li><a href="https://www.instagram.com/starbucks/"><img src="logoinstagram.png"></a></li>
+                <li><a href="https://twitter.com/starbucks"><img src="twitter.png"></a></li>
+            </ul>
+
+        </div>
+    </section>
+    <script type="text/javascript">
+
+        function imgSlider(anything) {
+            document.querySelector('.starbucks').src = anything;
+        }
+
+        function changeCircle(color){
+            const circle = document.querySelector('.circle');
+            circle.style.background = color;
+
+        }
+
+    </script>
+</body>
+</html>

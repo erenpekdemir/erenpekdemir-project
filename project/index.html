@@ -1,0 +1,184 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Starbucks Coffee - It's not just coffee</title>
+    <link rel="shortcut icon" href="logo.ico" type="image/x-icon">
+    <link rel="stylesheet" href="StyleSheet1.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <section>
+        <div class="circle"></div>
+        <header>
+            <a href="index.html"><img src="logo.png" class="logo"></a>
+            <ul>
+                <li><a href="index.html"><b>HOME</b></a></li>
+                <li><a href="shop.html"><b>SHOP</b></a></li>
+                <li><a href="delivery.html"><b>DELIVERY</b></a></li>
+                <li><a href="app.html"><b>APP</b></a></li>
+                <li><a href="contact.html"><b>CONTACT</b></a></li>
+            </ul>
+            <div class="menu">
+                <i class='bx bx-menu'></i>
+            </div>
+            <div class="buttons">
+                <button>
+                    <i class='bx bx-search bx-tada' style='color:#008148'></i>
+                </button>
+                <button>
+                    <i class='bx bx-shopping-bag bx-tada' style='color:#008148'></i>
+                </button>
+            </div>
+            <div class="search-form">
+                <input type="text" class="search-input" id="search-box" placeholder="Search Here" />
+                <i class='bx bx-search' style='color:#008148'></i>
+            </div>
+        </header>
+        
+        <div class="content">
+            <div class="textBox">
+                <h2>It's not just coffee<br> It's <span>Starbucks</span></h2>
+                <p><i>Since its inception, Starbucks has progressed to become a different company. It offered not only coffee and a rich coffee culture, but also an experience. Our goal is to be a brand that inspires and enriches the human spirit! And we strive to deliver the unique Starbucks Experience with each cup.</i></p>
+                <a href="#">Learn More</a>
+            </div>
+            <div class="imgBox">
+                <img src="photo1.png" class="starbucks">
+            </div>
+
+            <ul class="thumb">
+                <li><img src="thumb1.png" onclick="imgSlider('photo1.png'); changeCircle('#017143')"></li>
+                <li><img src="thumb2.png" onclick="imgSlider('photo2.png'); changeCircle('#eb7495')"></li>
+                <li><img src="thumb3.png" onclick="imgSlider('photo3.png'); changeCircle('#d752b1')"></li>
+            </ul>
+
+            <ul class="social">
+                <li><a href="https://www.facebook.com/Starbucks/"><img src="logofacebook.png"></a></li>
+                <li><a href="https://www.instagram.com/starbucks/"><img src="logoinstagram.png"></a></li>
+                <li><a href="https://twitter.com/starbucks"><img src="twitter.png"></a></li>
+            </ul>
+
+        </div>
+    </section>
+    <section class="shop" id="shop">
+        <div class="heading">
+            <span><b>Shop Now</b></span>
+            <h1><b>Shop Coffee</b></h1>
+        </div>
+        <div class="shop-container">
+            <div class="box">
+                <div class="box-img">
+                    <img src="shop1.png" alt="">
+                </div>
+                <div class="stars">
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star-half'></i>
+                </div>
+                <h2>Strawberries & Cream Frappuccino®</h2>
+                <span>$ 15.5</span>
+                <a href="#" class="btn">Order Now</a>
+            </div>
+
+            <div class="box">
+                <div class="box-img">
+                    <img src="shop2.png" alt="">
+                </div>
+                <div class="stars">
+                    <i class="bx bxs-star"></i>
+                    <i class="bx bxs-star"></i>
+                    <i class="bx bxs-star"></i>
+                    <i class="bx bxs-star"></i>
+                    <i class="bx bxs-star"></i>
+                </div>
+                <h2>Chocolatey Gingerbread Frappuccino®</h2>
+                <span>$ 13.5</span>
+                <a href="#" class="btn">Order Now</a>
+            </div>
+
+            <div class="box">
+                <div class="box-img">
+                    <img src="shop3.png" alt="">
+                </div>
+                <div class="stars">
+                    <i class="bx bxs-star"></i>
+                    <i class="bx bxs-star"></i>
+                    <i class="bx bxs-star"></i>
+                    <i class="bx bxs-star"></i>
+                    <i class="bx bxs-star-half"></i>
+                </div>
+                <h2>Matcha Crème Frappuccino® *Blended Beverage</h2>
+                <span>$ 17.0</span>
+                <a href="#" class="btn">Order Now</a>
+            </div>
+
+        </div>
+    </section>
+    <section class="delivery" id="delivery">
+        <div class="heading1">
+            <span>Get Now</span>
+            <h1>Order With Uber Eats</h1>
+        </div>
+        <div class="delivery-container">
+            <div class="delivery-img">
+                <img src="delivery.png" style="width:570px; height:370px" alt="">
+            </div>
+            <div class="delivery-text">
+                <h2> Today Deserve Delivery</h2>
+                <p><i>Starbucks has a supported partnership with Uber Eats, Postmates, or DoorDash to offer you coffee where you're at. Order Online Starbucks® coffee Menu- Delivered to your door in minutes. Select a location near you and fill up your cart - we'll handle the rest.</i></p>
+                <a href="#" class="btn">Order Now</a>
+            </div>
+
+        </div>
+
+    </section>
+    <section class="app" id="app">
+        <div class="heading2">
+            <span>Our App</span>
+            <h1>Download App</h1>
+        </div>
+        <div class="app-container">
+            <div class="app-img">
+                <img src="app.png" style="width:570px; height:370px" alt="">
+            </div>
+            <div class="app-text">
+                <h2>Starbucks Always With You :)</h2>
+                <p><i>Get the best of Starbucks® Rewards right at your fingertips. Use our mobile app to order ahead and pay at participating locations or to track the Stars and Rewards you’ve earned whether you’ve paid with cash, credit card or Starbucks Card. Find stores, redeem offers and so much more.</i></p>
+                <a href="#" class="btn">Get App</a>
+            </div>
+        </div>
+    </section>
+    <section class="contact" id="contact">
+        <div class="social1">
+            <a href="#"><i class="bx bxl-facebook"></i></a>
+            <a href="#"><i class="bx bxl-twitter"></i></a>
+            <a href="#"><i class="bx bxl-instagram"></i></a>
+            <a href="#"><i class="bx bxl-youtube"></i></a>
+        </div>
+        <div class="links">
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms Of Use</a>
+            <a href="#">Our Company</a><br><br>
+            <p><b>&#169; Starbucks All Right Deserved.</b></p>
+        </div><br>
+
+    </section>
+
+    <script type="text/javascript">
+
+        function imgSlider(anything) {
+            document.querySelector('.starbucks').src = anything; 
+        }
+
+        function changeCircle(color){
+            const circle = document.querySelector('.circle');
+            circle.style.background = color;
+
+        }
+
+    </script>
+</body>
+</html>

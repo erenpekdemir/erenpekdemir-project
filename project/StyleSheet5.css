@@ -1,0 +1,251 @@
+﻿*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Poppins';
+}
+
+html{
+    scroll-behavior: smooth;
+    scroll-padding-top: 9rem;
+}
+
+html ::-webkit-scrollbar{
+    width: 0.8rem;
+    background-color: white;
+}
+
+html::-webkit-scrollbar-track{
+    background-color: white;
+}
+html ::-webkit-scrollbar-thumb{
+    border-radius: 3rem;
+    background-color: #008148;
+}
+
+section{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    padding: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #fff;
+}
+
+header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo{
+    position: relative;
+    max-width: 80px;
+}
+
+header ul{
+    position: relative;
+    display: flex;
+}
+
+header ul li{
+    list-style: none;
+    font-size: 15px;
+}
+
+header ul li a{
+    display: inline-block;
+    color: #333;
+    font-weight: 400;
+    margin-left: 40px;
+    text-decoration: none;
+}
+
+header ul li a:hover{
+    color: #008148;
+}
+
+header .menu{
+    display:none;
+}
+
+header .buttons button{
+    cursor: pointer;
+    font-size: 1.7rem;
+    margin-left: 0.9rem;
+    background-color: transparent;
+    border-color: white;
+    border: none;
+    
+}
+
+header .search-form{
+    position: absolute;
+    top: 80%;
+    right: 7%;
+    background-color: #fff;
+    width: 20rem;
+    height: 3.5rem;
+    display: flex;
+    align-items: center;
+    border-radius: 3rem;
+    box-shadow: 0px 0px 25px 2px #008148;
+    transform: scaleY(0);  
+}
+
+header .search-form.active{
+    transform: scaleY(0);
+}
+
+header .search-form i{
+    cursor: pointer;
+    font-size: 2.2rem;
+    margin-right: 1rem;
+    color: black;
+}
+
+header .search-form input{
+    width: 100%;
+    border: none;
+    padding: 1px 10px;
+    border-left: 3px solid #008148;
+}
+
+.content{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.content .textBox{
+    position: relative;
+    max-width: 800px;
+}
+
+.content .textBox h2{
+    color: #017143;
+    font-size: 5em;
+    line-height: 1em;
+    font-weight: 900;
+}
+
+.content .textBox h2 span{
+    color: black;
+    font-size: 0.7em;
+    font-weight: 650;
+    text-decoration: underline;
+}
+
+.content .textBox h2 span:hover{
+    text-decoration: none;
+    color: #017143;
+}
+
+.content .textBox h3{
+    font-size: 2em;
+    color: black;
+    font-weight: 500;
+    line-height: 1.7em;
+}
+
+.content .textBox p{
+    font-size: 1.2em;
+}
+
+.content .textBox h3 p{
+    font-size: 1.3em;
+}
+
+.content .textBox a{
+    display: inline-block;
+    margin-top: 20px;
+    padding: 8px 20px;
+    background: #017143;
+    color: #fff;
+    border-radius: 40px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-decoration: none;
+}
+
+.content .imgBox{
+    width: 600px;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 50px;
+    margin-top: 50px;
+}
+
+.content .imgBox img{
+    max-width: 500px;
+}
+
+.social{
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.social li{
+    list-style: none;
+}
+
+.social li a{
+    display: inline-block;
+    margin: 5px 0;
+    transform: scale(0.6);
+    filter: invert(1);
+}
+
+.circle{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #017143;
+    clip-path: circle(700px at right 800px);
+}
+
+.contact .links{
+    margin: 1rem 0 1rem;
+    margin-top: -20rem;
+}
+
+.links a{
+    font-size: 1.2rem;
+    font-weight: 550px;
+    color: #1e3932;
+    padding: 1rem;
+    text-decoration: none;
+}
+
+.links a:hover{
+    color: #008148;
+}
+
+.contact p{
+    text-align: center;
+    text-transform: uppercase;
+}
+
+@media only screen and (max-width:768px){
+    section{justify-content:space-between;}
+    body ul{display:none;}
+    body .buttons{display:none;}
+    body .menu{display:block;}
+}

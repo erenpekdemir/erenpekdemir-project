@@ -1,0 +1,105 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Delivery | Starbucks Coffee</title>
+    <link rel="shortcut icon" href="logo.ico" type="image/x-icon">
+    <link rel="stylesheet" href="StyleSheet3.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <section>
+        <header>
+            <a href="index.html"><img src="logo.png" class="logo"></a>
+            <ul>
+                <li><a href="index.html"><b>HOME</b></a></li>
+                <li><a href="shop.html"><b>SHOP</b></a></li>
+                <li><a href="delivery.html"><b>DELIVERY</b></a></li>
+                <li><a href="app.html"><b>APP</b></a></li>
+                <li><a href="contact.html"><b>CONTACT</b></a></li>
+            </ul>
+            <div class="menu">
+                <i class='bx bx-menu'></i>
+            </div>
+            <div class="buttons">
+                <button>
+                    <i class='bx bx-search bx-tada' style='color:#008148'></i>
+                </button>
+                <button>
+                    <i class='bx bx-shopping-bag bx-tada' style='color:#008148'></i>
+                </button>
+            </div>
+            <div class="search-form">
+                <input type="text" class="search-input" id="search-box" placeholder="Search Here" />
+                <i class='bx bx-search' style='color:#008148'></i>
+            </div>
+        </header>
+    </section>
+    <section class="delivery" id="delivery">
+        <div class="heading1">
+            <span>Get Now</span>
+            <h1>Order With Starbucks App</h1>
+        </div>
+        <div class="delivery-container">
+            <div class="delivery-img">
+                <img src="gif.gif" style="width:570px; height:370px" alt="">
+            </div>
+            <div class="delivery-text">
+                <h2> Today Deserve Delivery</h2>
+                <p><i>Menu options are limited. Certain areas are serviced. Valid only at participating restaurants. The prices of Starbucks ® products purchased through the mobile application may differ from those stated in the restaurants.</i></p>
+                <a href="#" class="btn">Order Now</a>
+            </div>
+
+        </div>
+
+    </section>
+    <section class="app" id="app">
+        <div class="heading2">
+            <span>Online Order</span>
+            <h1>Order on the Web</h1>
+        </div>
+        <div class="app-container">
+            <div class="app-img">
+                <video controls autoplay width="580px" height="350px" loop muted>
+                    <source src="Starbucks It Starts With You.mp4" alt="">
+                </video>
+            </div>
+            <div class="app-text">
+                <h2>Starbucks Always With You :)</h2>
+                <p><i>Get the best of Starbucks® Rewards right at your fingertips. Use our mobile app to order ahead and pay at participating locations or to track the Stars and Rewards you’ve earned whether you’ve paid with cash, credit card or Starbucks Card. Find stores, redeem offers and so much more.</i></p>
+                <a href="#" class="btn">Get Order Site</a>
+            </div>
+        </div>
+    </section>
+    <section class="contact" id="contact">
+        <div class="social1">
+            <a href="#"><i class="bx bxl-facebook"></i></a>
+            <a href="#"><i class="bx bxl-twitter"></i></a>
+            <a href="#"><i class="bx bxl-instagram"></i></a>
+            <a href="#"><i class="bx bxl-youtube"></i></a>
+        </div>
+        <div class="links">
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms Of Use</a>
+            <a href="#">Our Company</a><br><br>
+            <p><b>&#169; Starbucks All Right Deserved.</b></p>
+        </div><br>
+
+    </section>
+
+    <script type="text/javascript">
+
+        function imgSlider(anything) {
+            document.querySelector('.starbucks').src = anything;
+        }
+
+        function changeCircle(color) {
+            const circle = document.querySelector('.circle');
+            circle.style.background = color;
+
+        }
+
+    </script>
+</body>
+</html>
